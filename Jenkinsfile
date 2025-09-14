@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Task: Compile and package the code. Tool: Maven .'
+        echo 'Task: Compile and package the code using Maven .'
       }
     }
     stage('Unit and Integration Tests') {
@@ -30,7 +30,7 @@ pipeline {
     }
     stage('Integration Tests on Staging') {
       steps {
-        echo 'Task: Run integration tests on staging. Tools: Newman or Selenium.'
+        echo 'Task: Run integration tests on staging using Newman or Selenium.'
       }
     }
     stage('Deploy to Production') {
