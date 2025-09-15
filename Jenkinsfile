@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Code Analysis') {
       steps {
-        echo 'Task: Static code quality checks using SonarQube......'
+        echo 'Task: Static code quality checks using SonarQube.'
       }
     }
     stage('Security Scan') {
